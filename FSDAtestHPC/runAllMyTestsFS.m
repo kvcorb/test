@@ -186,3 +186,6 @@ end
 
 TotSummary1=TotSummary(1:ij-1,:);
 disp(TotSummary1)
+file1ID=fopen('TotSummary.txt','a+');
+fprintf(file1ID,'%s',Exif);
+fclose('all');
