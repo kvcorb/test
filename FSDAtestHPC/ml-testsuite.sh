@@ -7,8 +7,6 @@
 #SBATCH --partition=bdw
 #SBATCH --mem=16G
 #SBATCH --time=0-2:10:02
-#SBATCH --account=<accountname>
-
 # imposto l’account su cui addebitare l’uso
 #SBATCH --account=G_ECON
 # manda email
