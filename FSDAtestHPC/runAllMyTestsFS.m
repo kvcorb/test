@@ -186,7 +186,8 @@ end
 
 TotSummary1=TotSummary(1:ij-1,:);
 disp(TotSummary1)
-filename = [FSDAroot '\test-results\' cat2test '_test.xlsx'];
+cfol=pwd
+filename = [cfol '/test-results/' cat2test '_test.xlsx'];
 writetable(TotSummary1,filename,'Sheet',1,'Range','A1');
 
 
