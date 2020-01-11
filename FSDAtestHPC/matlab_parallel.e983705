@@ -1,0 +1,72 @@
+{Error using fprintf
+Unable to convert 'table' value to 'char' or 'string'.
+
+Error in runAllMyTestsFS (line 190)
+fprintf(file1ID,'%s',TotSummary1);
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+{Error using fprintf
+Unable to convert 'table' value to 'char' or 'string'.
+
+Error in runAllMyTestsFS (line 190)
+fprintf(file1ID,'%s',TotSummary1);
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+{Error using fprintf
+Unable to convert 'table' value to 'char' or 'string'.
+
+Error in runAllMyTestsFS (line 190)
+fprintf(file1ID,'%s',TotSummary1);
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+{Error using fprintf
+Unable to convert 'table' value to 'char' or 'string'.
+
+Error in runAllMyTestsFS (line 190)
+fprintf(file1ID,'%s',TotSummary1);
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+{Error using fprintf
+Unable to convert 'table' value to 'char' or 'string'.
+
+Error in runAllMyTestsFS (line 190)
+fprintf(file1ID,'%s',TotSummary1);
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+{Error using fprintf
+Unable to convert 'table' value to 'char' or 'string'.
+
+Error in runAllMyTestsFS (line 190)
+fprintf(file1ID,'%s',TotSummary1);
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+{Error using fprintf
+Unable to convert 'table' value to 'char' or 'string'.
+
+Error in runAllMyTestsFS (line 190)
+fprintf(file1ID,'%s',TotSummary1);
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
+{Error using fprintf
+Unable to convert 'table' value to 'char' or 'string'.
+
+Error in runAllMyTestsFS (line 190)
+fprintf(file1ID,'%s',TotSummary1);
+
+Error in run (line 91)
+evalin('caller', strcat(script, ';'));
+} 
