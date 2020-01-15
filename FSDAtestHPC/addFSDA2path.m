@@ -23,16 +23,20 @@ function addFSDA2path(FSroot)
 % \regression;
 % \multivariate;
 % \regression;
+%
 % \clustering;
 % \graphics;
+%
 % \datasets\regression;
 % \datasets\multivariate;
 % \datasets\multivariate_regression;
 % \datasets\clustering
+%
 % \combinatorial;
 % \utilities;
 % \utilities_stat;
 % \utilities_help;
+%
 % \examples;
 % \FSDAdemos
 %
