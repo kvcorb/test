@@ -20,6 +20,7 @@ jobs:
           echo 'alpha'    > alpha.html
           echo 'bravo'    > bravo.html
           echo 'charlie'  > charlie.html
+          echo 'delta'    > delta.html
           cd ..
     
       - name: Step 3 - Use the Upload Artifact GitHub Action
