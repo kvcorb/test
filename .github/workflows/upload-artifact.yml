@@ -1,12 +1,41 @@
-  - name: build artifacts
-    run: make build-linux 
-  - name: upload linux artifact
-    uses: actions/upload-release-asset@v1
-    env:
-      GITHUB_TOKEN: ${{ github.token }}
-    with:
-      upload_url: ${{ steps.create_release.outputs.upload_url }}
-      asset_path: ./bin/azblogfilter.linux-amd64.tar.gz
-      asset_name: azblogfilter.linux-amd64.tar.gz
-      asset_content_type: application/gzip
-  
+# Publish GitHub release assets
+name: Publish GitHub release assets
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+       
+  archive-build-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Step 1 - Create a temporary artifact downloads folder
+        run: mkdir downloads
+        
+      - name: step 2 - Add artifacts to publish to the temp folder
+        run: |
+          cd downloads
+          echo 'alpha'    > alpha.html
+          echo 'bravo'    > bravo.html
+          echo 'charlie'  > charlie.html
+          echo 'delta'    > delta.html
+          cd ..
+    
+      - name: Step 3 - Use the Upload Artifact GitHub Action
+        uses: actions/upload-artifact@v2
+        with: 
+          name: assets-for-download
+          path: downloads
+
+      - name: upload linux artifact
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: github.event.release.upload_url
+          asset_path: ./download/assets-for-download.zip
+          asset_name: assets-for-download.zip
+          asset_content_type: application/gzip
