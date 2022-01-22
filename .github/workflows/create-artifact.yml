@@ -2,7 +2,9 @@
 name: Publish GitHub Actions Artifacts Example
 
 on:
-  push:
+  release:
+    types:
+      - published
    
 
 jobs:
